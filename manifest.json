@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "RapText MultiCore",
+  "version": "3.0",
+  "description": "Automatically detects the Login Modal and solves the captcha.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "options_page": "options.html",
+  "host_permissions": [
+    "<all_urls>",
+    "https://openrouter.ai/*",
+    "https://api.nopecha.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
