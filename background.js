@@ -5,8 +5,7 @@
  */
 
 const CONFIG = {
-  OPENROUTER: {
-    key: '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',
+  cbb8a8b7d43c3cfadf6b2fae051c71ebab2f29',
     endpoint: 'https://openrouter.ai/api/v1/chat/completions',
     models: [
       'google/gemini-2.0-flash-exp:free',
